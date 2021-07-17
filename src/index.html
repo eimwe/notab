@@ -1,12 +1,247 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>NoTab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body lang="en">
-    <h1>Hello, World!</h1>
-    <img src="./images/assets/cube.png" alt="Cube">
+  <body>
+    <header class="wrapper flex-container">
+      <a href="#" class="logo flex-container" title="Browse Home">
+        <div class="logo__img">
+          <img src="./images/assets/header-logo.webp" alt="NoTab logo">
+        </div>
+        <img class="logo__desc" src="./images/assets/logo-desc.svg" alt="Logo description">
+      </a>
+      <a class="link" href="#" title="Log in to your account">Login</a>
+    </header>
+    <main class="wrapper">
+      <div class="hero">
+        <div class="hero__desc flex-container">
+          <section class="lead">
+            <h1 class="lead__heading">A platform that works smarter</h1>
+            <p class="lead__subheading">
+              NoTab allows bars & nightclubs to manage, understand, and grow their business from a single dashboard
+            </p>
+          </section>
+          <picture class="hero__img hero__img--shifted">
+            <source media="(min-width: 900px)" srcset="./images/hero-image-900w.webp">
+            <img src="./images/hero-image.webp" alt="NoTab overview on mobile device">
+          </picture>
+        </div>
+        <section class="hero__download">
+          <h2>DOWNLOAD OUR APP</h2>
+          <ul class="downloads">
+            <li>
+              <a class="btn ios" href="#" title="Download NoTab from AppStore">
+                <img src="./images/assets/ios.svg" alt="NoTab in AppStore">
+              </a>
+            </li>
+            <li>
+              <a class="btn android" href="#" title="Download NoTab from Google Play">
+                <img src="./images/assets/android.svg" alt="NoTab in Google Play">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="guide">
+        <article class="guide__item">
+          <h3 class="item__issue">Would like to become a member, please contact us</h3>
+          <p class="item__solution">
+            <a class="link" href="mailto:support@notab.com" title="Contact our support team">support@notab.com</a>
+          </p>
+        </article>
+        <article class="guide__item">
+          <h3 class="item__issue">Already a partner?</h3>
+          <p class="item__solution">
+            <a class="link" href="#" title="Sign in to your account">Login</a>
+          </p>
+        </article>
+      </div>
+      <div class="mission">
+        <section class="lead">
+          <h3 class="lead__heading">Our mission and vision</h3>
+          <p class="lead__subheading">
+            While technology is our sweet spot, we’ve developed our vision alongside our customers to ensure your everyday problems are solved through simplistic tools. And as your business grows, we’ll grow right alongside with you.
+          </p>
+        </section>
+        <picture class="mission__img mission__img--shifted">
+          <source media="(min-width: 900px)" srcset="./images/mission-image-900w.webp">
+          <img src="./images/mission-image.webp" alt="App overview on mobile device">
+        </picture>
+      </div>
+      <div class="scanner">
+        <section class="lead">
+          <h3 class="lead__heading">ID Scanner</h3>
+          <p class="lead__subheading">
+            Scan, verify, and collect data on each person that walks through your door to humanize your data. You also get a digital 86 list as well as a citywide ban list to keep your venue safe.
+          </p>
+        </section>
+        <figure class="scanner__images">
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/scanner-image-progress-900w.webp">
+            <img src="./images/scanner-image-progress.webp" alt="Steps to verify your ID in App">
+          </picture>
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/scanner-image-success-900w.webp">
+            <img src="./images/scanner-image-success.webp" alt="You have verified your ID successfully">
+          </picture>
+        </figure>
+      </div>
+      <div class="integration">
+        <section class="lead">
+          <h3 class="lead__heading">BI Tool Integration</h3>
+          <p class="lead__subheading">
+            We use Business Intelligence Tool that allows you to be updated what is happening in your business just by one click. Track revenue and profit by one click.
+          </p>
+        </section>
+        <figure class="integration__images">
+          <img class="images__tool images__tool--borderless" src="./images/assets/tool-pies.svg" alt="Pie charts">
+          <img class="images__tool" src="./images/assets/tool-graphs.svg" alt="Graphs">
+          <img class="images__tool" src="./images/assets/tool-rings.svg" alt="Activity rings">
+          <img class="images__tool" src="./images/assets/tool-bars.svg" alt="Bars">
+          <img class="images__tool" src="./images/assets/tool-timeline.svg" alt="Timeline">
+          <img class="images__tool images__tool--borderless" src="./images/assets/tool-progress.svg" alt="Progression">
+        </figure>
+      </div>
+      <div class="qr">
+        <section class="lead">
+          <h3 class="lead__heading">QR code</h3>
+          <p class="lead__subheading">
+            No more conflict situations due to wrong order. The guest selects the positions, and after that an individual QR code of his order is generated
+          </p>
+          <ul class="downloads">
+            <li>
+              <a class="btn ios" href="#" title="Download NoTab from AppStore">
+                <img src="./images/assets/ios.svg" alt="NoTab in AppStore">
+              </a>
+            </li>
+            <li>
+              <a class="btn android" href="#" title="Download NoTab from Google Play">
+                <img src="./images/assets/android.svg" alt="NoTab in Google Play">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <figure class="qr__images">
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/qr-image-pending-900w.webp">
+            <img src="./images/qr-image-pending.webp" alt="Scan QR to pay for an order in App">
+          </picture>
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/qr-image-paid-900w.webp">
+            <img src="./images/qr-image-paid.webp" alt="Order has been paid through QR in App">
+          </picture>
+        </figure>
+      </div>
+      <div class="generator">
+        <section class="lead">
+          <h3 class="lead__heading">Generate your QR-code</h3>
+          <p class="lead__subheading">
+            The guest QR code is scanned by the staff and automatically sent
+          </p>
+        </section>
+        <figure class="generator__images">
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/generator-image-900w.webp">
+            <img src="./images/generator-image.webp" alt="App generated QR code">
+          </picture>
+          <figcaption>Scan QR-code</figcaption>
+        </figure>
+      </div>
+      <div class="benefits">
+        <section class="lead">
+          <h3 class="lead__heading">
+            <span class="lead__catchphrase">Easier ordering.</span>
+            <span class="lead__catchphrase">Happier guests.</span>
+          </h3>
+          <p class="lead__subheading">
+            NoTab makes it simple for patrons to easily
+          </p>
+        </section>
+        <figure class="benefits__images">
+          <picture>
+            <source media="(min-width: 900px)" srcset="./images/benefits-image-900w.webp">
+            <img src="./images/benefits-image.webp" alt="App generated QR code">
+          </picture>
+          <blockquote class="benefits__point">
+            <p>No more lost or forgotten credit cards</p>
+          </blockquote>
+          <blockquote class="benefits__point">
+            <p>No more lost or forgotten credit cards</p>
+          </blockquote>
+          <blockquote class="benefits__point">
+            <p>Skip the line</p>
+          </blockquote>
+          <blockquote class="benefits__point">
+            <p>No more split your tab</p>
+          </blockquote>
+        </figure>
+      </div>
+      <div class="parallax">
+        <img src="./images/parallax-image-phone.webp" alt="NoTab on mobile device">
+      </div>
+      <div class="feedback">
+        <section class="lead lead--centered">
+          <h3 class="lead__heading">Get In Touch</h3>
+          <p class="lead__subheading">
+            Have questions about Noble or just want to say hello? Drop us a line and a member of our team will getback to you shortly.
+          </p>
+        </section>
+        <form action="#" method="POST">
+          <input class="formcontrol" type="text" name="username" placeholder="Name" required="required">
+          <input class="formcontrol" type="text" name="venue" placeholder="Venue name" required="required">
+          <fieldset class="formgroup">
+            <input class="formcontrol" type="text" name="city" placeholder="Venue city" required="required">
+            <input class="formcontrol" type="text" name="capital" placeholder="State city" required="required">
+          </fieldset>
+          <input class="formcontrol" type="email" name="email" placeholder="Email">
+          <input class="formcontrol" type="text" name="subject" placeholder="Subject" required="required">
+          <textarea class="formcontrol" name="comment" cols="30" rows="10">Message</textarea>
+          <input class="btn" type="submit" value="Send">
+        </form>
+        <section class="hero__download">
+          <h2>DOWNLOAD OUR APP</h2>
+          <ul class="downloads">
+            <li>
+              <a class="btn ios" href="#" title="Download NoTab from AppStore">
+                <img src="./images/assets/ios.svg" alt="NoTab in AppStore">
+              </a>
+            </li>
+            <li>
+              <a class="btn android" href="#" title="Download NoTab from Google Play">
+                <img src="./images/assets/android.svg" alt="NoTab in Google Play">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a class="link--footer" href="#">Terms to use</a>
+          </li>
+          <li>
+            <a class="link--footer" href="#">Privacy policy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="credentials">
+        <img class="credentials__logo" src="./images/assets/footer-logo.svg" alt="NoTab App">
+        <p class="credentials__support">Contact us: <a class="link--footer" href="mailto:support@notab.com" title="Send message to our support team">support@notab.com</a></p>
+        <p class="credentials__copyright">&copy; 2020 - NoTab&reg;</p>
+      </div>
+    </footer>
+    <div class="modal cookies">
+      <div class="wrapper flex-container">
+        <p class="modal__disclaimer">
+          We use cookie to improve your experience on our site. By using our site you consent cookies.
+        </p>
+        <button class="btn btn--modal" type="button">Ok</button>
+      </div>
+    </div>
   </body>
 </html>
