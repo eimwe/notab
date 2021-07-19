@@ -1,0 +1,89 @@
+.link {
+  text-underline-offset: 7px;
+  transition: var(--transit);
+  &:hover {
+    text-decoration-color: transparent;
+  }
+  &--footer {
+    text-decoration-color: transparent;
+    text-underline-offset: 7px;
+    transition: var(--transit);
+    &:hover {
+      text-decoration-color: initial;
+    }
+  }
+}
+
+.lead {
+  &__heading {
+    margin-bottom: 1.5rem;
+    font-family: Montserrat;
+    font-size: var(--h3-fsize);
+  }
+  &__subheading {
+    font-size: var(--p-fsize);
+    font-weight: 400;
+  }
+}
+
+.hero__download {
+  padding-right: var(--spacer);
+  text-align: center;
+  h2 {
+    font-family: Montserrat;
+    font-size: var(--h2-fsize);
+    text-transform: uppercase;
+  }
+}
+
+.downloads {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: .75em 1em;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  background-color: transparent;
+  color: inherit;
+  transition: var(--transit);
+  &.ios {
+    padding: .844em 1.719em;
+    margin-top: 2em;
+    margin-bottom: 1.4em;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+form {
+  input, textarea {
+    display: block;
+    width: 100%;
+    padding: 1.125em .625em;
+    margin-bottom: 1em;
+    border: 1px solid #5C5C5C;
+    border-radius: 10px;
+    font: inherit;
+    color: var(--grey);
+  }
+  ::placeholder {
+    color: var(--grey);
+  }
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  input[type=submit] {
+    margin-top: 1.25em;
+    font-family: Montserrat;
+    font-size: 1.5em;
+    &:hover {
+      background-color: var(--green);
+      transform: none;
+    }
+  }
+}
