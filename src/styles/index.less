@@ -461,6 +461,34 @@ footer {
   }
 }
 
-.modal {
-  display: none;
+.cookies {
+  position: fixed;
+  bottom: -100px;
+  padding-left: var(--spacer);
+  padding-right: var(--spacer);
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  background-color: #212834;
+  .flex-container {
+    flex-wrap: nowrap;
+  }
+  .modal__disclaimer {
+    width: 55%;
+    font-size: var(--modal-fsize);
+    font-weight: 400;
+  }
+  .btn--modal {
+    padding: 1em 2.25em;
+    border: 0.5px solid #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Noto Sans';
+    font-size: var(--small-fsize);
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.1);
+    transition: var(--transit);
+    &:hover {
+      opacity: .7;
+      transform: none;
+    }
+  }
 }
