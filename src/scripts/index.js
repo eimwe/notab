@@ -98,7 +98,7 @@ let cookieModal = document.querySelector('.cookies'),
 
 // Функция показа модального окна
 function showCookieModal() {
-  let position = -100;
+  let position = -110;
   clearInterval(id);
   id = setInterval(frame, 10);
   function frame() {
@@ -117,7 +117,7 @@ function dismissCookieModal() {
   clearInterval(id);
   id = setInterval(frame, 10);
   function frame() {
-    if (position == -100) {
+    if (position == -110) {
       clearInterval(id);
     } else {
       position--;

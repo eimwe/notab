@@ -2,7 +2,7 @@
   --h1-fsize: clamp(2.1875rem, 8vw, 4rem);
   --h2-fsize: clamp(1.5rem, 6vw, 2.1875rem);
   --h3-fsize: clamp(1.5rem, 6vw, 3.125rem);
-  --h4-fsize: clamp(1.5rem, 5vw, 3.125rem);
+  --h4-fsize: clamp(1.5rem, 5vw, 1.875rem);
   --p-fsize: clamp(1rem, 4vw, 1.125rem);
   --small-fsize: clamp(.875rem, 3vw, 1.125rem);
   --medium-fsize: clamp(1.125rem, 4vw, 1.5rem);
@@ -11,4 +11,10 @@
   --transit: 300ms;
   --grey: #bfbfbf;
   --green: seagreen;
+}
+
+@media only screen and (min-width: 600px) {
+  :root {
+    --spacer: 2.25em;
+  }
 }

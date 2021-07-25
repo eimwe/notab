@@ -19,7 +19,7 @@
       <div class="hero">
         <div class="hero__desc flex-container">
           <section class="lead">
-            <h1 class="lead__heading">A platform that works smarter</h1>
+            <h1 class="lead__heading">A platform <span class="heading__string">that works smarter</span></h1>
             <p class="lead__subheading">
               NoTab allows bars & nightclubs to manage, understand, and grow their business from a single dashboard
             </p>
@@ -102,6 +102,7 @@
           <img class="images__tool" src="./images/assets/tool-rings.svg" alt="Activity rings">
           <img class="images__tool" src="./images/assets/tool-bars.svg" alt="Bars">
           <img class="images__tool" src="./images/assets/tool-timeline.svg" alt="Timeline">
+          <img class="images__tool" src="./images/assets/tool-double.svg" alt="Double line graph">
           <img class="images__tool images__tool--borderless" src="./images/assets/tool-progress.svg" alt="Progression">
         </figure>
       </div>
@@ -180,13 +181,23 @@
         </figure>
       </div>
       <div class="parallax">
-        <img src="./images/parallax-image-phone.webp" alt="NoTab on mobile device">
+        <svg class="parallax__bg">
+          <defs>
+            <pattern id="Text" x="0" y="0" width="1" height=".2">
+              <text x="0" y="160">notabnotabnotab</text>
+            </pattern>
+          </defs>
+          <rect fill="url(#Text)" stroke="black" width="100%" height="100%"/>
+        </svg>
+        <div class="parallax__img">
+          <img src="./images/parallax-image-phone.webp" alt="NoTab on mobile device">
+        </div>
       </div>
       <div class="feedback">
         <section class="lead lead--centered">
           <h3 class="lead__heading">Get In Touch</h3>
           <p class="lead__subheading">
-            Have questions about Noble or just want to say hello? Drop us a line and a member of our team will getback to you shortly.
+            Have questions about Noble or just want to say hello? <span class="heading__string">Drop us a line and a member of our team will getback to you shortly.</span>
           </p>
         </section>
         <form class="feedback__form" action="#" method="POST">
