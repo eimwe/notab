@@ -12,10 +12,13 @@ if (process.env.NODE_ENV === 'production') {
 module.exports = {
   mode: mode,
   
-  entry: './src/scripts/index.js',
+  entry: {
+    index: './src/scripts/index.js',
+    slider: './src/scripts/slider.js',
+  },
   
   output: {
-    filename: './js/script.js',
+    filename: './js/[name].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -84,6 +87,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.html',
+      chunks: ['index'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'slider.html',
+      template: './src/slider.html',
+      chunks: ['slider'],
     }),
   ],
 
