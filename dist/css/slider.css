@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  font: 1rem Arial, sans-serif;
+  background-color: grey;
+  color: #fff;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+h2 {
+  margin: 0;
+}
+button {
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.slideshow__wrapper {
+  position: relative;
+  width: 70%;
+  min-height: 500px;
+  overflow: hidden;
+}
+.slideshow__gallery {
+  min-height: 500px;
+}
+.slideshow__gallery .gallery__item {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 500px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  background-color: grey;
+}
+.slideshow__gallery .gallery__item.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+.slideshow__gallery .gallery__item h2 {
+  padding-top: 120px;
+  padding-left: 500px;
+  font-size: 200px;
+}
+.slideshow__control {
+  width: 40px;
+  height: 40px;
+  padding-left: 4px;
+  border: 2px solid #fff;
+  font-size: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  transform: translate(10px, -10px);
+  transition: all 300ms;
+}
+.slideshow__control.prev-slide {
+  transform: rotate(180deg) translate(10px, 10px);
+}
+.slideshow__control.next-slide {
+  left: unset;
+  right: -5%;
+}
+.slideshow__control:hover {
+  background-color: #fff;
+}
+.slideshow__control:hover path {
+  fill: grey;
+}
+.slideshow__indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 0;
+}
+.slideshow__indicators li + li {
+  margin-left: 10px;
+}
+.slideshow__indicators .indicator {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slideshow__indicators .indicator.active {
+  background-color: #fff;
+  cursor: not-allowed;
+}
+
+
+/*# sourceMappingURL=slider.css.map*/
