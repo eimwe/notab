@@ -1,58 +1,38 @@
-# Landing Page for Purrweb
+# Landing Page + slider assignments
 
-Mobile-first landing page designed by Purrweb team.
+Updated mobile-first landing page and slider code.
 
 ## Technology stack
 
 - HTML 5
-- LESS
+- Dart Sass
 - JavaScript
-- Webpack 5
+- Gulp 4
 
 ## Test environment
 
-- Google Chrome 92.0.4515.159
-- Firefox 91.0.2
+- Google Chrome 107.0.5304.107
+- Firefox 107.0
 
 ## Attributions
 
-1. [Purrweb](https://www.purrweb.com/) team made the original design layout in Figma. It's a test assignment to evaluate Frontend skills.
+1. [Purrweb](https://www.purrweb.com/) team made the original design layout in Figma.
 2. [Andy Leverenz](https://twitter.com/justalever) provide me with an excellent source code for form validation in [this article](https://web-crunch.com/posts/vanilla-javascript-form-validation). Thanks a lot, Andy! I modified the source code to meet the requirements of the form.
 3. [Nocenti](https://codepen.io/nocenti) helped me to realize how to repeat text as a Background thanks to his [pen](https://codepen.io/nocenti/pen/XWboBvX).
-4. [W3Schools](https://www.w3schools.com/) gave me a wholesome piece of advice on how to use JS animation in their [article](https://www.w3schools.com/howto/howto_js_animate.asp).
-
-## Conributing
-
-If you get interested in this project, I'd be glad to see your contributions. Pull requests are welcome!
-
-## Project folders
-
-- **/dist** (unminimized production build)
-- **/src** (unminimized developer build)
 
 ## Usage instructions
 
 1. Clone the repository
-2. Run `npm i` to install dependencies
+2. Run `npm ci` to install dependencies
 3. Run one of the following commands:
 
 ### Production Build
 
-```
-npm run build
-```
-
-### Development Build
-
-```
-npm run build-dev
-```
+`npm run prod`
 
 ### Development Server
 
-```
-npm start
-```
+`npm run dev`
 
 ## License
 
