@@ -1,0 +1,24 @@
+:root {
+  /* Typography */
+
+  // font-size
+  --fs-h1: clamp(2.1875rem, 8vw, 4rem);
+  --fs-h2: clamp(1.5rem, 6vw, 2.1875rem);
+  --fs-h3: clamp(1.5rem, 6vw, 3.125rem);
+  --fs-content: clamp(1rem, 4vw, 1.125rem);
+  --fs-xs: clamp(.75rem, 2vw, .875rem);;
+  --fs-sm: clamp(.875rem, 3vw, 1.125rem);
+  --fs-md: clamp(1.125rem, 4vw, 1.5rem);
+
+  // line-height
+  --lead-content: 100%;
+  --lead-intro: 90%;
+
+  /* Colors */
+
+  // color
+  --clr-content: #fff;
+
+  // background-color
+  --bg-body: #000;
+}
