@@ -1,0 +1,54 @@
+@use '../abstracts/mixins';
+
+.gallery {
+  position: relative;
+  display: grid;
+  align-items: center;
+  min-height: 100vh;
+
+  &__slides {
+    @include mixins.reset_list;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+    pointer-events: none;
+  }
+
+  &__slide {
+    display: grid;
+    align-items: center;
+    min-height: 200px;
+    text-align: center;
+    scroll-snap-align: start;
+    border: 2px solid currentColor;
+    background-color: var(--bg-slide);
+  }
+
+  &__caption {
+    font-size: var(--fs-h1);
+  }
+
+  &__button {
+    @include mixins.sr_only;
+  }
+
+  &__control {
+    position: absolute;
+    top: calc(50% - 1em);
+    min-width: 2em;
+    background-color: transparent;
+
+    &--prev {
+      left: 0;
+      transform: scale(-1);
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+}
