@@ -1,10 +1,14 @@
 @use '../abstracts/mixins';
+@use './a11y';
 
 .gallery {
-  position: relative;
   display: grid;
   align-items: center;
   min-height: 100vh;
+
+  &__container {
+    position: relative;
+  }
 
   &__slides {
     @include mixins.reset_list;
@@ -15,13 +19,17 @@
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
-    pointer-events: none;
+    min-width: 80%;
+    min-height: 400px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__slide {
     display: grid;
     align-items: center;
-    min-height: 200px;
     text-align: center;
     scroll-snap-align: start;
     border: 2px solid currentColor;
@@ -32,15 +40,13 @@
     font-size: var(--fs-h1);
   }
 
-  &__button {
-    @include mixins.sr_only;
-  }
-
   &__control {
     position: absolute;
-    top: calc(50% - 1em);
+    bottom: calc(50% - 0.75em);
+    z-index: 2;
     min-width: 2em;
     background-color: transparent;
+    cursor: pointer;
 
     &--prev {
       left: 0;
@@ -49,6 +55,29 @@
 
     &--next {
       right: 0;
+    }
+  }
+
+  &__pages {
+    @include mixins.reset_list;
+
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-block-start: 0.75em;
+  }
+
+  &__page {
+    min-width: 1em;
+    min-height: 1em;
+    border: 2px solid currentColor;
+    background-color: transparent;
+    border-radius: var(--round-radius);
+    cursor: pointer;
+
+    &--active {
+      background-color: currentColor;
+      pointer-events: none;
     }
   }
 }
