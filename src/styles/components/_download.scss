@@ -20,8 +20,8 @@
   }
 
   &__option {
+    display: block;
     min-width: 185px;
-    //padding-inline: 1em;
     padding-block: .75em;
     border: 1px solid currentColor;
     border-radius: var(--btn-radius);
