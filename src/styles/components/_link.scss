@@ -5,4 +5,8 @@
     padding-block-end: 0.55em;
     text-underline-offset: 8px;
   }
+
+  &--no-offset {
+    text-underline-offset: 2px;
+  }
 }

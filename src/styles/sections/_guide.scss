@@ -1,0 +1,24 @@
+.guide {
+
+  &__item {
+    padding-block: 2.5em;
+    padding-inline: 2em;
+    border: 2px solid var(--clr-article-border);
+    border-radius: var(--article-radius);
+
+    &:last-child {
+      margin-block-start: 1.875em;
+    }
+  }
+
+  &__issue {
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    line-height: 1.35;
+    margin-block-end: 1.25em;
+  }
+
+  &__solution {
+    font-size: var(--fs-md);
+  }
+}

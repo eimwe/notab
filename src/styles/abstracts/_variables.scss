@@ -9,11 +9,13 @@
   --fs-xs: clamp(.75rem, 2vw, .875rem);;
   --fs-sm: clamp(.875rem, 3vw, 1.125rem);
   --fs-md: clamp(1.125rem, 4vw, 1.5rem);
+  --fs-lg: clamp(1.5rem, 3vw, 1.875rem);
 
   /* Colors */
 
   // color
   --clr-content: #fff;
+  --clr-article-border: rgba(255, 255, 255, 0.5);
 
   // background-color
   --bg-body: #000;
@@ -23,4 +25,5 @@
 
   --round-radius: 50%;
   --btn-radius: 8px;
+  --article-radius: 21.3671px;
 }
