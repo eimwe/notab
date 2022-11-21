@@ -1,0 +1,10 @@
+.user {
+
+  &__image {
+    display: none;
+  }
+
+  &__desc {
+    font-size: var(--fs-sm);
+  }
+}

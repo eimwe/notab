@@ -1,0 +1,10 @@
+@use '../abstracts/mixins';
+
+.page-header {
+  padding-block-start: 2.5em; 
+
+  &__container {
+    @include mixins.flex;
+    justify-content: space-between;
+  }
+}

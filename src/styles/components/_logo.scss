@@ -1,0 +1,15 @@
+@use '../abstracts/mixins';
+
+.logo {
+  @include mixins.flex;
+
+  &__image {
+    max-width: 52px;
+    max-height: 52px;
+  }
+
+  &__desc {
+    max-width: 46px;
+    max-height: 12px;
+  }
+}

@@ -17,3 +17,8 @@
   white-space: nowrap;
   border-width: 0
 }
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
