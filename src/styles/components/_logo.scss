@@ -2,6 +2,7 @@
 
 .logo {
   @include mixins.flex;
+  gap: .25em;
 
   &__image {
     max-width: 52px;

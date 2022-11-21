@@ -2,3 +2,5 @@
 @use './base' as *;
 @use './layout' as *;
 @use './components' as *;
+@use './components/a11y';
+@use './sections' as *;

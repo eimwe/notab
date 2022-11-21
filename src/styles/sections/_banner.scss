@@ -1,0 +1,39 @@
+.banner {
+  position: relative;
+  padding-block-start: 5.75em;
+  margin-block-end: 4.375em;
+  text-align: left;
+  background-image: url('../assets/images/bg/banner-bg-left.svg'),
+                    url('../assets/images/bg/banner-bg-right.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, center left;
+
+  &__container {
+    min-height: 445px;
+    padding-block-start: 6.25em;
+    padding-block-end: 3.5em;
+  }
+
+  &__intro {
+    max-width: 70%;
+  }
+
+  &__heading {
+    font-family: 'Montserrat';
+    font-size: var(--fs-h1);
+    font-weight: 700;
+    line-height: 1.14;
+  }
+
+  &__subheading {
+    margin-block-start: 1.5em;
+    margin-block-end: 0;
+    line-height: 1.4;
+  }
+
+  &__image {
+    position: absolute;
+    top: 5.3em;
+    right: 0;
+  }
+}

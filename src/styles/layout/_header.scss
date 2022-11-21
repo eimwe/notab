@@ -1,6 +1,10 @@
 @use '../abstracts/mixins';
 
 .page-header {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
   padding-block-start: 2.5em; 
 
   &__container {

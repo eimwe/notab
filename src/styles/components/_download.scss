@@ -1,0 +1,33 @@
+@use '../abstracts/mixins';
+
+.download {
+  text-align: center;
+
+  &__heading {
+    display: block;
+    font-family: 'Montserrat';
+    font-size: var(--fs-h2);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-block-end: 1.42em;
+  }
+
+  &__options {
+    @include mixins.reset_list;
+    @include mixins.flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  &__option {
+    min-width: 185px;
+    //padding-inline: 1em;
+    padding-block: .75em;
+    border: 1px solid currentColor;
+    border-radius: var(--btn-radius);
+  }
+
+  &__image {
+    margin-inline: auto;
+  }
+}

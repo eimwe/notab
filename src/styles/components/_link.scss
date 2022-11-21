@@ -1,6 +1,8 @@
 .link {
 
   &--offset {
+    display: block;
+    padding-block-end: 0.55em;
     text-underline-offset: 8px;
   }
 }
