@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 *,
@@ -13,7 +12,6 @@ body {
   font-family: 'NotoSans', sans-serif;
   font-size: var(--fs-content);
   font-weight: 400;
-  line-height: var(--lead-content);
   color: var(--clr-content);
   background-color: var(--bg-body);
 }
@@ -25,8 +23,11 @@ img {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+}
+
+abbr[title] {
+  text-decoration: none;
 }
 
 button,
@@ -36,6 +37,7 @@ input {
   font: inherit;
 }
 
-figure {
+figure,
+dl, dd {
   margin: 0;
 }
