@@ -1,0 +1,27 @@
+.qr {
+  padding-block-start: 14.25em;
+  margin-block-end: 8em;
+  background-image: url('../assets/images/bg/qr-bg-top.png'),
+                    url('../assets/images/bg/qr-bg-bottom.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, right 35.25%;
+  
+  &__desc {
+    padding-inline-end: 2.2em;
+    margin-block-end: 3.125em;
+  }
+
+  &__images {
+    margin-block-start: 15em;
+  }
+
+  &__image {
+    max-width: 282px;
+    max-height: 564px;
+    margin-inline: auto;
+
+    &--right {
+      margin-block-start: 3.125em;
+    }
+  }
+}

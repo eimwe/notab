@@ -1,0 +1,38 @@
+.generator {
+  margin-block-end: 7.25em;
+  background-image: url('../assets/images/bg/generator-bg-text.svg'),
+                    url('../assets/images/bg/generator-bg-gradient.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: 59%, 100%;
+
+  &__image-container {
+    margin-block-start: 4.375em;
+  }
+
+  &__image {
+    max-width: 182px;
+    max-height: 366px;
+    margin-inline: auto;
+  }
+
+  &__caption {
+    position: relative;
+    padding-inline-end: 1em;
+    margin-block-start: 3.5em;
+    text-align: right;
+    font-family: 'Montserrat';
+    font-size: var(--fs-md);
+    font-weight: 700;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -6.8em;
+      right: 0.85em;
+      min-width: 65px;
+      min-height: 120px;
+      background-image: url('../assets/images/icons/arrow.svg');
+      background-repeat: no-repeat;
+    }
+  }
+}
