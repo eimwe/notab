@@ -105,8 +105,8 @@
             </p>
           </div>
           <figure class="scanner__images">
-            <img src="assets/images/content/scanner-image-progress-900w.webp" alt="Steps to verify your ID in App" width="334" height="668">
-            <img src="assets/images/content/scanner-image-success-900w.webp" alt="You have verified your ID successfully" width="334" height="668">
+            <img class="scanner__image scanner__image--left" src="assets/images/content/scanner-image-progress-900w.webp" alt="Steps to verify your ID in App" width="334" height="668">
+            <img class="scanner__image scanner__image--right" src="assets/images/content/scanner-image-success-900w.webp" alt="You have verified your ID successfully" width="334" height="668">
           </figure>
         </div>
       </div>
@@ -132,7 +132,7 @@
         <div class="qr__container">
           <div class="intro">
             <h2 class="intro__heading"><abbr title="Quick Response">QR</abbr> code</h2>
-            <p class="intro__content">
+            <p class="intro__content qr__desc">
               No more conflict situations due to wrong order. The guest selects the positions, and after that an individual QR code of his order is generated
             </p>
             <div class="download">
@@ -151,22 +151,24 @@
             </div>
           </div>
           <figure class="qr__images">
-            <img src="assets/images/content/qr-image-pending-900w.webp" alt="Scan QR to pay for an order in App" width="334" height="668">
-            <img src="assets/images/content/qr-image-paid-900w.webp" alt="Order has been paid through QR in App" width="334" height="668">
+            <img class="qr__image qr__image--left" src="assets/images/content/qr-image-pending-900w.webp" alt="Scan QR to pay for an order in App" width="334" height="668">
+            <img class="qr__image qr__image--right" src="assets/images/content/qr-image-paid-900w.webp" alt="Order has been paid through QR in App" width="334" height="668">
           </figure>
         </div>
-        <section class="qr__generator">
-          <div class="intro intro--spaced">
-            <h3 class="intro__heading">Generate your QR-code</h3>
-            <p class="intro__content">
-              The guest QR code is scanned by the staff and automatically sent
-            </p>
-          </div>
-          <figure class="qr__image">
-            <img src="assets/images/content/generator-image-900w.webp" alt="Scan QR to pay for an order in App" width="334" height="668">
-            <figcaption>Scan QR-code</figcaption>
-          </figure>
-        </section>
+      </div>
+    </section>
+    <section class="generator">
+      <div class="container">
+        <div class="intro intro--spaced">
+          <h2 class="intro__heading">Generate your QR-code</h2>
+          <p class="intro__content">
+            The guest QR code is scanned<br>by the staff and automatically sent
+          </p>
+        </div>
+        <figure class="generator__image-container">
+          <img class="generator__image" src="assets/images/content/generator-image-900w.webp" alt="Scan QR to pay for an order in App" width="334" height="668">
+          <figcaption class="generator__caption">Scan QR-code</figcaption>
+        </figure>
       </div>
     </section>
     <div class="benefits">
