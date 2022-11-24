@@ -1,0 +1,20 @@
+.scanner {
+  padding-block-start: 14em;
+  margin-block-end: 9em;
+  background-image: url('../assets/images/bg/scanner-bg.png');
+  background-repeat: no-repeat;
+
+  &__images {
+    margin-block-start: 4.375em;
+  }
+
+  &__image {
+    max-width: 287px;
+    max-height: 576px;
+    margin-inline: auto;
+
+    &--right {
+      margin-block-start: 3.4375em;
+    }
+  }
+}

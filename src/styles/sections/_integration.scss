@@ -1,0 +1,11 @@
+.integration {
+  position: relative;
+  min-height: 418px;
+  margin-block-end: 2em;
+
+  &__images {
+    position: absolute;
+    left: 0;
+    margin-block-start: 1.875em;
+  }
+}
