@@ -11,12 +11,16 @@
   --fs-sm: clamp(.875rem, 3vw, 1.125rem);
   --fs-md: clamp(1.125rem, 4vw, 1.5rem);
   --fs-lg: clamp(1.5rem, 3vw, 1.875rem);
+  --fs-submit-btn: 1.5rem;
 
   /* Colors */
 
   // color
   --clr-content: #fff;
+  --clr-placeholder: #bfbfbf;
   --clr-article-border: rgba(255, 255, 255, 0.5);
+  --clr-input-border: #5c5c5c;
+  --clr-input-invalid: #ff0000;
 
   // background-color
   --bg-body: #000;

@@ -1,0 +1,21 @@
+.feedback {
+  padding-block-start: 6em;
+  background-image: url('../assets/images/bg/feedback-bg-top.svg'),
+                    url('../assets/images/bg/feedback-bg-bottom.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, 0 118%;
+  background-size: 60%, 100%;
+
+  &__line-break {
+    display: none;
+  }
+
+  &__desc {
+    padding-inline: .75em;
+  }
+
+  &__form {
+    margin-block-start: 3.125em;
+    margin-block-end: 4.625em;
+  }
+}

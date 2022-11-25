@@ -1,0 +1,15 @@
+.btn {
+  color: inherit;
+  background-color: transparent;
+
+  &--submit {
+    width: 100%;
+    min-height: 80px;
+    border: 1px solid currentColor;
+    border-radius: var(--tooltip-radius);
+    font-family: 'Montserrat';
+    font-size: var(--fs-submit-btn);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}

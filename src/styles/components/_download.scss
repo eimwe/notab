@@ -10,6 +10,13 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-block-end: 1.42em;
+
+    &--centered {
+      margin-block-end: 2em;
+      font-family: 'NotoSans';
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
   }
 
   &__options {

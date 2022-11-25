@@ -1,0 +1,35 @@
+@use '../abstracts/mixins';
+
+.form {
+
+  &__control {
+    width: 100%;
+    padding-block: 1em;
+    padding-inline: .625em;
+    margin-block-end: 1em;
+    border: 1px solid var(--clr-input-border);
+    border-radius: var(--tooltip-radius);
+    line-height: 1.4;
+    text-transform: capitalize;
+
+    ::placeholder {
+      color: var(--clr-placeholder);
+    }
+
+    &--invalid {
+      box-shadow: 0 0 0 2px var(--clr-input-invalid);
+    }
+  }
+
+  &__textarea {
+    min-height: 9em;
+    border: none;
+    margin-block-end: 2.25em;
+  }
+  
+  &__group {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+}
