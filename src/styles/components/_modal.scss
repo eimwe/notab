@@ -1,0 +1,19 @@
+@use '../abstracts/mixins';
+
+.modal {
+  padding-inline: .9375em;
+  padding-block: 1.375em;
+  background-color: var(--bg-modal);
+
+  &__container {
+    @include mixins.flex;
+
+    gap: 4em;
+  }
+
+  &__disclaimer {
+    margin: 0;
+    font-size: var(--fs-xs);
+    line-height: 1.33;
+  }
+}

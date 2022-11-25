@@ -12,4 +12,15 @@
     font-weight: 700;
     line-height: 1.2;
   }
+
+  &--modal {
+    padding-block: 1em;
+    padding-inline: 2.5em;
+    border: var(--btn-modal-border) solid currentColor;
+    border-radius: var(--btn-modal-radius);
+    font-size: var(--fs-submit-modal);
+    line-height: 1.35;
+    text-transform: uppercase;
+    background-color: var(--bg-modal-btn);
+  }
 }
