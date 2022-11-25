@@ -6,7 +6,8 @@
   --fs-h2: clamp(1.5rem, 6vw, 2.1875rem);
   --fs-h3: clamp(1.5rem, 6vw, 3.125rem);
   --fs-content: clamp(1rem, 4vw, 1.125rem);
-  --fs-xs: clamp(.75rem, 2vw, .875rem);;
+  --fs-tooltip: clamp(.875rem, 1vw, 1.425rem);
+  --fs-xs: clamp(.75rem, 2vw, .875rem);
   --fs-sm: clamp(.875rem, 3vw, 1.125rem);
   --fs-md: clamp(1.125rem, 4vw, 1.5rem);
   --fs-lg: clamp(1.5rem, 3vw, 1.875rem);
@@ -26,4 +27,7 @@
   --round-radius: 50%;
   --btn-radius: 8px;
   --article-radius: 21.3671px;
+  --tooltip-radius: 10px;
+
+  --tooltip-border: 0.76007px;
 }

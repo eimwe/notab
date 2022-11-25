@@ -1,0 +1,70 @@
+@use '../abstracts/mixins';
+
+.benefits {
+  min-height: 730px;
+  background-image: url('../assets/images/bg/benefits-bg.svg');
+  background-repeat: no-repeat;
+
+  &__title {
+    display: block;
+  }
+
+  &__image-container {
+    position: relative;
+    min-height: 430px;
+    margin-block-start: 9.0626em;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    min-width: 360px;
+  }
+
+  &__list {
+    @include mixins.reset_list;
+  }
+
+  &__item {
+    position: absolute;
+    border: var(--tooltip-border) solid var(--clr-article-border);
+    border-radius: var(--tooltip-radius);
+    font-family: 'Roboto';
+    font-size: var(--fs-tooltip);
+    font-weight: 500;
+    line-height: 1.14;
+    background-color: var(--bg-body);
+
+    &:first-child {
+      top: -4.9em;
+      left: 1.75em;
+      max-width: 11.75em;
+      padding-block: .75em;
+      padding-inline: .875em;
+    }
+
+    &:nth-child(2) {
+      right: 0;
+      top: 1.5em;
+      padding-block: .9375em;
+      padding-inline: 1.125em;
+      max-width: 12.2em;
+    }
+    
+    &:nth-child(3) {
+      left: 1.125em;
+      bottom: 3.3em;
+      padding-block: .875em;
+      padding-inline: .9375em;
+    }
+
+    &:last-child {
+      right: 0;
+      bottom: -3.7em;
+      max-width: 8.7em;
+      padding-block: .85em;
+      padding-inline: 1.25em;
+    }
+  }
+}
