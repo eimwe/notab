@@ -69,3 +69,25 @@
     font-weight: 700;
     font-style: normal;
 }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/AvenirLT-Medium.eot');
+  src: local('AvenirLT-Medium'), local('AvenirLT Medium'),
+      url('../assets/fonts/AvenirLT-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/AvenirLT-Medium.woff') format('woff'),
+      url('../assets/fonts/AvenirLT-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/AvenirLT-Heavy.eot');
+  src: local('AvenirLT-Heavy'), local('AvenirLT Heavy'),
+      url('../assets/fonts/AvenirLT-Heavy.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/AvenirLT-Heavy.woff') format('woff'),
+      url('../assets/fonts/AvenirLT-Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}

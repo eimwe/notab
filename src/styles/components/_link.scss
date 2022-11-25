@@ -9,4 +9,9 @@
   &--no-offset {
     text-underline-offset: 2px;
   }
+
+  &--no-decor {
+    text-underline-offset: 4px;
+    text-decoration: none;
+  }
 }
