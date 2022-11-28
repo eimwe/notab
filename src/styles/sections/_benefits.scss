@@ -69,3 +69,36 @@
     }
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .benefits {
+    background-position-x: right;
+    background-size: 75%;
+
+    &__image-container {
+      min-height: 860px;
+      margin-block-start: 5em;
+    }
+
+    &__item {
+  
+      &:first-child {
+        top: 20em;
+      }
+  
+      &:nth-child(2) {
+        right: 8em;
+        top: 12em;
+      }
+      
+      &:nth-child(3) {
+        left: 12em;
+        bottom: 14em;
+      }
+  
+      &:last-child {
+        bottom: 20em;
+      }
+    }
+  }
+}

@@ -33,3 +33,13 @@
     border: none;
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .form {
+
+    &__group {
+      display: flex;
+      gap: 1em;
+    }
+  }
+}

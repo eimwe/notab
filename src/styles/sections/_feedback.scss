@@ -19,3 +19,11 @@
     margin-block-end: 4.625em;
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .feedback {
+    background-size: 50%, 70%;
+    background-position-x: 0, right;
+    background-position-y: 0, 118%;
+  }
+}

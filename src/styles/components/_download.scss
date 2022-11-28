@@ -50,6 +50,10 @@
 
     &__options {
       flex-direction: row;
+
+      &--centered {
+        justify-content: center;
+      }
     }
   }
 }
