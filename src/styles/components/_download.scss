@@ -49,9 +49,7 @@
     }
 
     &__options {
-      &--row {
-        flex-direction: row;
-      }
+      flex-direction: row;
     }
   }
 }

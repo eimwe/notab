@@ -14,3 +14,9 @@
     min-width: inherit;
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .integration {
+    min-height: 836px;
+  }
+}

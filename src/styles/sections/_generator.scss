@@ -37,3 +37,23 @@
     }
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .generator {
+    background-size: contain, cover;
+
+    &__image {
+      max-width: 282px;
+      max-height: 564px;
+    }
+
+    &__caption {
+
+      &::before {
+        top: -5em;
+        min-width: 80px;
+        min-height: 160px;
+      }
+    }
+  }
+}

@@ -27,3 +27,27 @@
     }
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .qr {
+    padding-block-start: 20em;
+    background-position-y: 0, 55%;
+    background-size: contain, 65%;
+
+    &__images {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: center;
+      gap: 1.5em;
+      min-height: 650px;
+    }
+
+    &__image {
+  
+      &--right {
+        align-self: end;
+        margin-block-start: 0;
+      }
+    }
+  }
+}
