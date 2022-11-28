@@ -6,7 +6,9 @@
   background-image: url('../assets/images/bg/banner-bg-left.svg'),
                     url('../assets/images/bg/banner-bg-right.svg');
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 0, center left;
+  background-position-x: 0, 0;
+  background-position-y: 0, center;
+  background-size: cover, 50%;
 
   &__container {
     min-height: 445px;

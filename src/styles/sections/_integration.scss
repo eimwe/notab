@@ -6,6 +6,11 @@
   &__images {
     position: absolute;
     left: 0;
+    min-width: 100%;
     margin-block-start: 1.875em;
+  }
+
+  &__image {
+    min-width: inherit;
   }
 }

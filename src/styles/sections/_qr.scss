@@ -4,7 +4,9 @@
   background-image: url('../assets/images/bg/qr-bg-top.png'),
                     url('../assets/images/bg/qr-bg-bottom.png');
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 0, right 35.25%;
+  background-position-x: 0, right;
+  background-position-y: 0, 35.25%;
+  background-size: contain, 91%;
   
   &__desc {
     padding-inline-end: 2.2em;
