@@ -38,3 +38,20 @@
     margin-inline: auto;
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .download {
+
+    &__heading {
+      &--aligned {
+        text-align: left;
+      }
+    }
+
+    &__options {
+      &--row {
+        flex-direction: row;
+      }
+    }
+  }
+}
