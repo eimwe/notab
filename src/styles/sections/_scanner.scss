@@ -19,3 +19,22 @@
     }
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .scanner {
+
+    &__images {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: center;
+      gap: 1.5em;
+    }
+
+    &__image {
+  
+      &--right {
+        margin-block-start: 0;
+      }
+    }
+  }
+}

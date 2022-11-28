@@ -32,3 +32,18 @@
     }
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .mission {
+    margin-block-end: 5.65em;
+
+    &__image {
+      position: static;
+      margin-block-start: 5em;
+  
+      &::before {
+        content: none;
+      }
+    }
+  }
+}
