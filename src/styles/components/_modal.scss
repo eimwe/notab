@@ -17,3 +17,14 @@
     line-height: 1.33;
   }
 }
+
+@media only screen and (min-width: 600px) {
+  .modal {
+    padding-inline: 2.5em;
+    padding-block: 1.5em;
+
+    &__container {  
+      gap: 12em;
+    }
+  }
+}

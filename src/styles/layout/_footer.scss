@@ -1,10 +1,6 @@
 @use '../abstracts/mixins';
 
 .page-footer {
-  /*position: absolute;
-  top: 0;
-  z-index: 1;
-  width: 100%;*/
   padding-block-start: 4em;
   padding-block-end: 1.25em;
   text-align: center;
@@ -50,5 +46,27 @@
   &__copyright {
     font-size: var(--fs-sm);
     font-weight: 800;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .page-footer {
+    background-size: 22%;
+    background-position-y: bottom;
+
+    &__container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    &__credentials {
+      text-align: left;
+    }
+
+    &__logo {
+      margin-inline: unset;
+      margin-inline-end: auto;
+    }
   }
 }
