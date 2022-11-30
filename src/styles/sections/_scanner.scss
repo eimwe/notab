@@ -38,3 +38,25 @@
     }
   }
 }
+
+@media only screen and (min-width: 900px) {
+  .scanner {
+    margin-block-end: 0;
+    background-image: url('../assets/images/bg/scanner-bg-desktop.png');
+
+    &__container {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 2em;
+    }
+
+    &__intro {
+      align-self: end;
+    }
+
+    &__images {
+      order: -1;
+      margin-block-start: 0;
+    }
+  }
+}
