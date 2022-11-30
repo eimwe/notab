@@ -26,7 +26,7 @@
       z-index: -1;
       position: absolute;
       top: 0;
-      background-color: #FFFFFF;
+      background-color: var(--clr-content);
       opacity: .2;
       filter: blur(38.1517px);
     }
@@ -43,6 +43,36 @@
   
       &::before {
         content: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .mission {
+
+    &__container {
+      min-height: 520px;
+    }
+
+    &__intro {
+      max-width: 36%;
+      margin-inline-start: auto;
+    }
+
+    &__desc {
+      padding-inline-end: 0;
+    }
+
+    &__image {
+      position: absolute;
+      left: -460px;
+      margin-block-start: 0;
+  
+      &::before {
+        content: '';
+        min-width: 1000px;
+        min-height: 520px;
       }
     }
   }

@@ -62,3 +62,36 @@
     }
   }
 }
+
+@media only screen and (min-width: 900px) {
+  .banner {
+    background-position-y: -1000px, center;
+    background-position-x: 100%, 0;
+    background-size: cover, 30%;
+
+    &__container {
+      padding-block-end: 3.5em;
+    }
+
+    &__intro {
+      max-width: 50%;
+    }
+
+    &__image {
+      top: 70px;
+      right: 40px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        width: 340px;
+        height: 670px;
+        background-color: var(--clr-content);
+        opacity: .2;
+        filter: blur(80px);
+      }
+    }
+  }
+}
