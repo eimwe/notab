@@ -27,3 +27,26 @@
     background-position-y: 0, 118%;
   }
 }
+
+@media only screen and (min-width: 900px) {
+  .feedback {
+    background-image: url('../assets/images/bg/feedback-bg-top-desktop.svg'),
+                      url('../assets/images/bg/feedback-bg-bottom.svg');
+    background-size: 40%, auto;
+    background-position-x: 20%, right;
+    background-position-y: 0, 118%;
+
+    &__desc {
+      padding-inline: 0;
+    }
+
+    &__line-break {
+      display: block;
+    }
+
+    &__form {
+      max-width: 818px;
+      margin-inline: auto;
+    }
+  }
+}

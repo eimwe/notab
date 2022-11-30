@@ -102,3 +102,16 @@
     }
   }
 }
+
+@media only screen and (min-width: 900px) {
+  .benefits {
+    background-image: url('../assets/images/bg/benefits-bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    &__image {
+      position: static;
+      margin-inline: auto;
+    }
+  }
+}
