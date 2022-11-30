@@ -57,3 +57,24 @@
     }
   }
 }
+
+@media only screen and (min-width: 900px) {
+  .generator {
+    padding-block-start: 16em;
+    background-position-x: 0, 0;
+    background-position-y: 65%, 50%;
+
+    &__image {
+      max-width: 334px;
+      max-height: 668px;
+    }
+
+    &__caption {
+      padding-inline-end: 4em;
+
+      &::before {
+        right: 4em;
+      }
+    }
+  }
+}

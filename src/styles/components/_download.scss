@@ -64,5 +64,13 @@
     &__heading {
       margin-block-end: .75em;
     }
+
+    &__options {
+
+      &--headless {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   }
 }
