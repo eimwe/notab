@@ -14,3 +14,18 @@
     max-height: 12px;
   }
 }
+
+@media only screen and (min-width: 900px) {
+  .logo {
+
+    &__image {
+      max-width: 107px;
+      max-height: 109px;
+    }
+  
+    &__desc {
+      max-width: 96px;
+      max-height: 26px;
+    }
+  }
+}

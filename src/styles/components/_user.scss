@@ -8,3 +8,16 @@
     font-size: var(--fs-sm);
   }
 }
+
+@media only screen and (min-width: 900px) {
+  .user {
+    display: flex;
+    gap: .75em;
+
+    &__image {
+      display: block;
+      width: 26px;
+      height: 26px;
+    }
+  }
+}
