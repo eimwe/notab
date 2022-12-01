@@ -29,3 +29,17 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .logo {
+    gap: unset;
+    
+    &__image {
+      transform: translateX(-14px);
+    }
+
+    &__desc {
+      transform: translate(-8px, 4px);
+    }
+  }
+}

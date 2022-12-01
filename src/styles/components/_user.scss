@@ -1,4 +1,6 @@
 .user {
+  padding-block-end: 0.55em;
+  text-underline-offset: 8px;
 
   &__image {
     display: none;
@@ -13,11 +15,24 @@
   .user {
     display: flex;
     gap: .75em;
+    padding-block-end: 0;
+    transition: text-decoration-color var(--delay);
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
 
     &__image {
       display: block;
       width: 26px;
       height: 26px;
     }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .user {
+    transform: translateY(6px);
+    text-underline-offset: 6px;
   }
 }

@@ -22,3 +22,13 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .page-header {
+    padding-block-start: 1.25em;
+
+    &__container {
+      gap: 5.65em;
+    }
+  }
+}
