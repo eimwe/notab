@@ -28,3 +28,13 @@
     }
   }
 }
+
+@media only screen and (min-width: 900px) {
+  .modal {
+
+    &__container {  
+      justify-content: space-between;
+      gap: unset;
+    }
+  }
+}
