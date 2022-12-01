@@ -40,3 +40,30 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .guide {
+    gap: 4.45em;
+    max-width: 1088px;
+    min-height: 312px;
+    margin-inline: auto;
+
+    &__item {
+      padding-block: 3.3em;
+      padding-inline: 3em;
+
+      &:first-child {
+        padding-inline-end: 5.5em;
+        padding-block-start: 3.5em;
+      }
+
+      &:last-child {
+        padding-block-start: 3em;
+      }
+    }
+
+    &__issue {
+      margin-block-end: 1.1em;
+    }
+  }
+}

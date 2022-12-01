@@ -50,6 +50,7 @@
 
 @media only screen and (min-width: 900px) {
   .mission {
+    background-image: none;
 
     &__container {
       min-height: 520px;
@@ -74,6 +75,30 @@
         min-width: 1000px;
         min-height: 520px;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mission {
+    padding-block-start: 7.75em;
+    margin-block-end: 20em;
+    background-image: url('../assets/images/bg/mission-bg-desktop.svg');
+    background-position-x: 82%;
+    background-position-y: 40%;
+    background-size: auto;
+
+    &__intro {
+      max-width: 34%;
+    }
+
+    &__desc {
+      padding-inline-end: 5.5em;
+    }
+
+    &__image {
+      left: -175px;
+      transform: translateY(102px);
     }
   }
 }

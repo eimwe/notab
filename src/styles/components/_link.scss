@@ -9,3 +9,16 @@
     text-decoration: none;
   }
 }
+
+@media only screen and (min-width: 900px) {
+  .link {
+
+    &--no-offset {
+      transition: text-decoration-color var(--delay);
+      
+      &:hover {
+        text-decoration-color: transparent;
+      }
+    }
+  }
+}

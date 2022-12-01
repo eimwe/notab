@@ -60,3 +60,28 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .scanner {
+    padding-block-start: 26.25em;
+    background-size: cover;
+
+    &__container {
+      gap: 7em;
+    }
+    
+    &__intro {
+      max-width: 80%;
+      margin-block-end: 3.8em;
+    }
+
+    &__image {
+      max-width: 334px;
+      max-height: 668px;
+    }
+
+    &__images {
+      gap: 2.7em;
+    }
+  }
+}
