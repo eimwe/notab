@@ -72,5 +72,37 @@
         align-items: flex-start;
       }
     }
+
+    &__option {
+      transition: box-shadow var(--delay);
+      
+      &:hover {
+        box-shadow: var(--shadow-btn);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .download {
+
+    &--row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-inline-end: 3.5em;
+    }
+
+    &__heading {
+      &--aligned {
+        margin-block-end: 0;
+      }
+    }
+
+    &__option {
+      min-width: auto;
+      padding-inline: .65em;
+      padding-block: .5em;
+    }
   }
 }
