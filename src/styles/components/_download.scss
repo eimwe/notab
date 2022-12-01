@@ -99,6 +99,13 @@
       }
     }
 
+    &__options {
+
+      &--headless {
+        flex-direction: row;
+      }
+    }
+
     &__option {
       min-width: auto;
       padding-inline: .65em;

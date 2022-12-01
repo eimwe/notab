@@ -50,3 +50,28 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .integration {
+    padding-block-start: 11.5em;
+    background-size: auto;
+    background-position-y: 0;
+
+    &__container {
+      grid-template-columns: 496px 704px;
+    }
+
+    &__intro {
+      align-self: start;
+      margin-block-start: 5em;
+    }
+
+    &__title {
+      margin-block-end: .7em;
+    }
+
+    &__desc {
+      padding-inline-end: 4.5em;
+    }
+  }
+}

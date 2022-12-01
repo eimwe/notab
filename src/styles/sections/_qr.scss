@@ -84,3 +84,30 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .qr {
+    padding-block-start: 15.5em;
+
+    &__intro {
+      max-width: 70%;
+      margin-block-end: 1.8em;
+      margin-inline-start: auto;
+      margin-inline-end: 3.3em;
+    }
+
+    &__images {
+      gap: 4.75em;
+      transform: translateX(50px);
+    }
+
+    &__image {
+      max-width: 334px;
+      max-height: 668px;
+
+      &--right {
+        transform: translateY(340px);
+      }
+    }
+  }
+}
