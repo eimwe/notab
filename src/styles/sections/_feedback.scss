@@ -50,3 +50,16 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .feedback {
+    background-size: 30%, auto;
+    background-position-x: 30%, right;
+    background-position-y: 0, 100%;
+
+    &__form {
+      margin-block-start: 4.6em;
+      margin-block-end: 5.15em;
+    }
+  }
+}

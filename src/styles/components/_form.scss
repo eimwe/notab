@@ -43,3 +43,23 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .form {
+
+    &__control {
+      padding-block: 1.55em;
+      padding-inline: 1.375em;
+      margin-block-end: 1.28em;
+    }
+
+    &__group {
+      gap: 1.28em;
+    }
+
+    &__textarea {
+      min-height: 11em;
+      margin-block-end: 3.25em;
+    }
+  }
+}

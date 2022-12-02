@@ -76,7 +76,8 @@
     &__option {
       transition: box-shadow var(--delay);
       
-      &:hover {
+      &:hover,
+      &:focus {
         box-shadow: var(--shadow-btn);
       }
     }
@@ -97,6 +98,11 @@
       &--aligned {
         margin-block-end: 0;
       }
+
+      &--centered {
+        margin-block-end: 1.5em;
+        font-size: var(--fs-submit-btn);
+      }
     }
 
     &__options {
@@ -104,12 +110,39 @@
       &--headless {
         flex-direction: row;
       }
+
+      &--centered {
+        gap: 3.25em;
+      }
     }
 
     &__option {
       min-width: auto;
       padding-inline: .65em;
       padding-block: .5em;
+
+      &--ios {
+        min-width: 260px;
+        padding-block: .75em;
+      }
+
+      &--android {
+        min-width: 292px;
+        padding-block: .68em;
+      }
+    }
+
+    &__image {
+
+      &--ios {
+        min-width: 215px;
+        min-height: 50px;
+      }
+
+      &--android {
+        min-width: 250px;
+        min-height: 55px;
+      }
     }
   }
 }
