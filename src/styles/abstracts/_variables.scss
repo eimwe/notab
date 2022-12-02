@@ -6,7 +6,7 @@
   --fs-h2: clamp(1.5rem, 6vw, 2.1875rem);
   --fs-h3: clamp(1.5rem, 6vw, 3.125rem);
   --fs-content: clamp(1rem, 4vw, 1.125rem);
-  --fs-tooltip: clamp(.875rem, 1vw, 1.425rem);
+  --fs-tooltip: clamp(.875rem, 2vw, 1.425rem);
   --fs-xs: clamp(.75rem, 2vw, .875rem);
   --fs-sm: clamp(.875rem, 3vw, 1.125rem);
   --fs-md: clamp(1.125rem, 4vw, 1.5rem);
@@ -16,12 +16,14 @@
   --fs-footer: 1.125rem;
   --fs-banner-subheading: 1.25rem;
   --fs-generator-caption: 1.3125rem;
+  --fs-bg: 13rem;
 
   /* Colors */
 
   // color
   --clr-content: #fff;
   --clr-placeholder: #bfbfbf;
+  --clr-pattern: #8b8b8b;
   --clr-article-border: rgba(255, 255, 255, 0.5);
   --clr-input-border: #5c5c5c;
   --clr-input-invalid: #ff0000;
@@ -32,6 +34,7 @@
   --bg-modal: #212834;
   --bg-modal-btn: rgba(255, 255, 255, 0.1);
   --shadow-btn: 0 0 18px -6px var(--clr-content);
+  --bg-pattern: linear-gradient(360deg, var(--bg-body) 6.8%, rgba(0, 0, 0, 0) 51.62%, var(--bg-body) 97.38%);
 
   /* Shapes */
 
@@ -39,6 +42,7 @@
   --btn-radius: 8px;
   --article-radius: 21.3671px;
   --tooltip-radius: 10px;
+  --tooltip-radius-desktop: 18.24px;
 
   --tooltip-border: 0.76007px;
   --btn-modal-border: 0.5px;

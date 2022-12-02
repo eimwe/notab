@@ -115,3 +115,53 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .benefits {
+
+    &__intro {
+      max-width: 38.5%;
+      margin-inline-start: auto;
+    }
+
+    &__image-container {
+      margin-block-start: 0;
+    }
+
+    &__image {
+      margin-inline-start: 11.75em;
+    }
+
+    &__item {
+      border-radius: var(--tooltip-radius-desktop);
+  
+      &:first-child {
+        top: 15.82em;
+        left: 8.2em;
+        max-width: 285px;
+        padding-inline: 1.25em;
+        padding-block: 1.25em;
+      }
+  
+      &:nth-child(2) {
+        top: 9em;
+        right: 12.5em;
+        max-width: 266px;
+        padding-inline: 0.75em;
+      }
+      
+      &:nth-child(3) {
+        left: 18em;
+        bottom: 10.6em;
+        padding-inline: 1.05em;
+      }
+  
+      &:last-child {
+        right: 6.5em;
+        bottom: 13.5em;
+        max-width: 185px;
+        padding-inline: 1em;
+      }
+    }
+  }
+}

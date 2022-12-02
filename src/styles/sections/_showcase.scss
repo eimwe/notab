@@ -1,3 +1,56 @@
 .showcase {
   display: none;
 }
+
+@media only screen and (min-width: 1200px) {
+  .showcase {
+    position: relative;
+    display: block;
+    padding-block-start: 17em;
+    padding-block-end: 8.5em;
+
+    &__pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: fill-available;
+      height: -webkit-fill-available;
+      height: -moz-available;
+      font-family: 'Manrope';
+      font-weight: 700;
+      font-size: var(--fs-bg);
+      line-height: 1.4;
+      text-transform: uppercase;
+      fill: var(--bg-body);
+      text-shadow: var(--clr-pattern) 0 1px, var(--clr-pattern) 0 -1px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-image: var(--bg-pattern);
+    }
+
+    &__image {
+      margin-inline: auto;
+    }
+  }
+
+  /* Firefox 'height: fill-available' fallback */
+  @supports (-moz-appearance:none) {
+    .showcase {
+
+      &__pattern {
+        min-height: 1000px;
+      }
+
+      &::after {
+        min-height: 1000px;
+      }
+    }
+  }
+}
