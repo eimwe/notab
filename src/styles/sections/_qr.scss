@@ -90,10 +90,11 @@
     padding-block-start: 15.5em;
 
     &__intro {
-      max-width: 70%;
-      margin-block-end: 1.8em;
-      margin-inline-start: auto;
-      margin-inline-end: 3.3em;
+      transform: translate(82px, -30px);
+    }
+
+    &__desc {
+      padding-inline-end: 10em;
     }
 
     &__images {
