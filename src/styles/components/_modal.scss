@@ -38,3 +38,15 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .modal {
+    padding-block: 1.225em;
+    padding-inline: 1.335em;
+
+    &__container {
+      max-width: 1316px;
+      margin-inline-start: auto;
+    }
+  }
+}
