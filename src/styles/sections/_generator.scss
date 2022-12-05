@@ -127,3 +127,11 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .generator {
+    background-size: contain, 65%;
+    background-position-x: 0, 50%;
+    background-position-y: 50%, 100%;
+  }
+}

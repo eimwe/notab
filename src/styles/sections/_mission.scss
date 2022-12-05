@@ -97,8 +97,17 @@
     }
 
     &__image {
-      left: -175px;
+      left: -282px;
       transform: translateY(102px);
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .mission {
+
+    &__image {
+      left: 0;
     }
   }
 }

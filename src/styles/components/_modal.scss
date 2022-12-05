@@ -50,3 +50,17 @@
     }
   }
 }
+
+@media only screen and (min-width: 1600px) {
+  .modal {
+
+    &__container {
+      max-width: 1400px;
+      margin-inline: auto;
+    }
+
+    &__disclaimer {
+      padding-inline-start: 5.8em;
+    }
+  }
+}
