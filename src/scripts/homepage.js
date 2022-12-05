@@ -1,1 +1,61 @@
-console.log('Landing page');
+/**
+ * Variables for a cookies modal
+ * @member {HTMLElement}
+ */
+let cookieModal = document.querySelector('.modal--cookies'),
+    cookieConsent = document.querySelector('.btn--modal'),
+    id = null;
+
+/**
+ * @function showCookieModal
+ * @description shows cookies modal
+ * @param {undefined}
+ * @returns {undefined}
+ */
+const showCookieModal = () => {
+  let position = -110;
+  clearInterval(id);
+  id = setInterval(frame, 10);
+  function frame() {
+    if (position == 0) {
+      clearInterval(id);
+    } else {
+      position++;
+      cookieModal.style.bottom = `${position}px`;
+    }
+  }
+}
+
+/**
+ * @function dismissCookieModal
+ * @description hides cookies modal
+ * @param {undefined}
+ * @returns {undefined}
+ */
+const dismissCookieModal = () => {
+  let position = 0;
+  clearInterval(id);
+  id = setInterval(frame, 10);
+  function frame() {
+    if (position == -110) {
+      clearInterval(id);
+    } else {
+      position--;
+      cookieModal.style.bottom = `${position}px`;
+    }
+  }
+}
+
+/**
+ * Shows cookies modal on page load
+ * @see {@link showCookieModal}
+ */
+showCookieModal();
+
+/**
+ * Hides cookies modal on 'OK' button click
+ * @listens click
+ * @fires dismissCookieModal
+ * @see {@link dismissCookieModal}
+ */
+cookieConsent.addEventListener('click', dismissCookieModal);

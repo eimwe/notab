@@ -1,6 +1,10 @@
 @use '../abstracts/mixins';
 
 .modal {
+  position: fixed;
+  bottom: -100px;
+  z-index: 1;
+  width: 100%;
   padding-inline: .9375em;
   padding-block: 1.375em;
   background-color: var(--bg-modal);
