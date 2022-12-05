@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="slideshow, JavaScript">
+  <meta name="description" content="Gallery slideshow with JavaScript-based animation">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="styles/slider.css">
+  <script type="module" src="scripts/slider.js"></script>
+  <title>Gallery slider v2.0</title>
+</head>
+<body>
+  <div class="container">
+    <div class="gallery">
+      <div class="gallery__container">
+        <button class="gallery__control gallery__control--prev" type="button">
+          <span class="visually-hidden">Previous</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+            <defs>
+              <clipPath>
+                <path fill="#ffffff" d="m-7 1024.36h34v34h-34z"/>
+              </clipPath>
+              <clipPath>
+                <path fill="#ffffff" d="m-6 1028.36h32v32h-32z"/>
+              </clipPath>
+            </defs>
+            <path d="m345.44 248.29l-194.29 194.28c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744l171.91-171.91-171.91-171.9c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.29 194.28c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373" transform="matrix(.03541-.00013.00013.03541 2.98 3.02)" fill="#ffffff"/>
+          </svg>
+        </button>
+        <ol class="gallery__slides">
+          <li data-id="0" class="gallery__slide gallery__slide--active">
+            <span class="gallery__caption">1</span>
+          </li>
+          <li data-id="1" class="gallery__slide">
+            <span class="gallery__caption">2</span>
+          </li>
+          <li data-id="2" class="gallery__slide">
+            <span class="gallery__caption">3</span>
+          </li>
+          <li data-id="3" class="gallery__slide">
+            <span class="gallery__caption">4</span>
+          </li>
+          <li data-id="4" class="gallery__slide">
+            <span class="gallery__caption">5</span>
+          </li>
+        </ol>
+        <ol class="gallery__pages">
+          <li data-id="0" class="gallery__page gallery__page--active">
+            <span class="visually-hidden">1</span>
+          </li>
+          <li data-id="1" class="gallery__page">
+            <span class="visually-hidden">2</span>
+          </li>
+          <li data-id="2" class="gallery__page">
+            <span class="visually-hidden">3</span>
+          </li>
+          <li data-id="3" class="gallery__page">
+            <span class="visually-hidden">4</span>
+          </li>
+          <li data-id="4" class="gallery__page">
+            <span class="visually-hidden">5</span>
+          </li>
+        </ol>
+        <button class="gallery__control gallery__control--next" type="button">
+          <span class="visually-hidden">Next</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+            <defs>
+              <clipPath>
+                <path fill="#ffffff" d="m-7 1024.36h34v34h-34z"/>
+              </clipPath>
+              <clipPath>
+                <path fill="#ffffff" d="m-6 1028.36h32v32h-32z"/>
+              </clipPath>
+            </defs>
+            <path d="m345.44 248.29l-194.29 194.28c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744l171.91-171.91-171.91-171.9c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.29 194.28c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373" transform="matrix(.03541-.00013.00013.03541 2.98 3.02)" fill="#ffffff"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
