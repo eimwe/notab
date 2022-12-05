@@ -6,7 +6,7 @@
 
   &--no-decor {
     text-underline-offset: 4px;
-    text-decoration: none;
+    text-decoration-color: transparent;
   }
 }
 
@@ -16,8 +16,18 @@
     &--no-offset {
       transition: text-decoration-color var(--delay);
       
-      &:hover {
+      &:hover,
+      &:focus {
         text-decoration-color: transparent;
+      }
+    }
+
+    &--no-decor {
+      transition: text-decoration-color var(--delay);
+
+      &:hover,
+      &:focus {
+        text-decoration-color: currentColor;
       }
     }
   }

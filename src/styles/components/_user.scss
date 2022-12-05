@@ -18,7 +18,8 @@
     padding-block-end: 0;
     transition: text-decoration-color var(--delay);
 
-    &:hover {
+    &:hover,
+    &:focus {
       text-decoration-color: transparent;
     }
 
