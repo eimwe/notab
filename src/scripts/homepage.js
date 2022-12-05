@@ -91,3 +91,21 @@ showCookieModal();
 * @see {@link dismissCookieModal}
 */
 cookieConsent.addEventListener('click', dismissCookieModal);
+
+
+/**
+ * @name IIFE
+ * @function
+ * @description self-executing anonymous function
+ * sets current year in a footer copyright section
+ * @param {undefined}
+ * @returns {undefined}
+ */
+ (() => {
+  let date = new Date(),
+      currentYearNode = document.querySelector('.page-footer__current-year');
+
+  if (currentYearNode.textContent.length > 0) currentYearNode.textContent = '';
+  
+  currentYearNode.append(date.getFullYear());
+})();
