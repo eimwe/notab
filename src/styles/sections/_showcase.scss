@@ -18,6 +18,7 @@
       height: fill-available;
       height: -webkit-fill-available;
       height: -moz-available;
+      min-height: 1000px;
       font-family: 'Manrope';
       font-weight: 700;
       font-size: var(--fs-bg);
@@ -32,25 +33,12 @@
       position: absolute;
       inset: 0;
       z-index: -1;
+      min-height: 1000px;
       background-image: var(--bg-pattern);
     }
 
     &__image {
       margin-inline: auto;
-    }
-  }
-
-  /* Firefox 'height: fill-available' fallback */
-  @supports (-moz-appearance:none) {
-    .showcase {
-
-      &__pattern {
-        min-height: 1000px;
-      }
-
-      &::after {
-        min-height: 1000px;
-      }
     }
   }
 }

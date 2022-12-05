@@ -17,7 +17,7 @@
     }
 
     &--invalid {
-      box-shadow: 0 0 0 2px var(--clr-input-invalid);
+      outline: 2px solid var(--clr-input-invalid);
     }
   }
 
