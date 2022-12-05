@@ -19,6 +19,7 @@
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
+    pointer-events: none;
     min-width: 80%;
     min-height: 400px;
 
@@ -78,6 +79,16 @@
     &--active {
       background-color: currentColor;
       pointer-events: none;
+    }
+  }
+}
+
+/* Firefox scrollbar fix */
+@supports (-moz-appearance:none) {
+  .gallery {
+
+    &__slides {
+      scrollbar-width: none;
     }
   }
 }
